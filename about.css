@@ -269,3 +269,50 @@ footer .end span{
         transform: translateY(0);
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+     /* navigation */
+   
+    nav{
+        display: flex;
+        align-items: left;
+        justify-content: flex-start;
+        height: 10vh;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    
+
+    nav .logo img{
+        display: none;
+
+    }
+
+     /* footer */
+     footer .footer_main{
+        display: list-item;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .about .about_main .about_image img{
+        display: none;
+
+    }
+
+    .about .about_main .about_text p{
+        width: 650px;
+        display: inline;
+        text-align: justify;
+        line-height: 23px;
+        margin-top: 20px;
+    }
+
+}
