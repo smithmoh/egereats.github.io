@@ -1,0 +1,17 @@
+% Step 1: Read the image using imread
+originalImage = imread('C:\Users\smiqm\Desktop\MATLAB\matlab images\img1.jpeg');
+
+% Step 2: Convert the image to grayscale using rgb2gray
+grayImage = rgb2gray(originalImage);
+
+% Step 3: Perform noise reduction using median filtering
+filteredImage = medfilt2(grayImage, [3, 3]); % You can adjust the filter size [3,3] as needed
+
+% Step 4: Apply contrast enhancement using histogram equalization
+enhancedImage = histeq(filteredImage);
+
+% Display the original image and preprocessed image for comparison
+subplot(2,2,1), imshow(originalImage), title('Original Image');
+subplot(2,2,2), imshow(grayImage), title('Grayscale Image');
+subplot(2,2,3), imshow(filteredImage), title('Filtered Image');
+subplot(2,2,4), imshow(enhancedImage), title('Enhanced Image');
