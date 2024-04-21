@@ -23,7 +23,7 @@ section nav{
 }
 
 section nav .logo img{
-    width: 120px;
+    width: 50px;
     margin: 20px 0;
     position: relative;
     left: -45%;
@@ -706,14 +706,21 @@ footer .end span{
 
 /* Mobile phones */
 @media only screen and (max-width: 600px) {
-    .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    /* .left, .main, .right {
+      width: 100%; The width is 100%, when the viewport is 800px or smaller 
+    } */
+    body{
+        max-width: 600px;
+        margin: 0 auto;
+        overflow-x: hidden;   
+
     }
 
     /* navigation */
     section{
         width: 100%;
         height: 85vh;
+        
     }
     
     section nav{
@@ -769,7 +776,7 @@ footer .end span{
     }
      
     section .main .main_image img{
-        visibility: hidden;
+        /* visibility: hidden; */
         display: none;
 
     }
