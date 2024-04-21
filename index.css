@@ -704,7 +704,7 @@ footer .end span{
     }
 }
 
-
+/* Mobile phones */
 @media only screen and (max-width: 600px) {
     .left, .main, .right {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
@@ -713,7 +713,7 @@ footer .end span{
     /* navigation */
     section{
         width: 100%;
-        height: 100vh;
+        height: 85vh;
     }
     
     section nav{
@@ -777,7 +777,7 @@ footer .end span{
     /* our menu */
     .menu{
         width: 100%;
-        height: 380vh;
+        height: 370vh;
              
     }
     
@@ -825,6 +825,7 @@ footer .end span{
     .menu .menu_box .menu_card .menu_text h2{
         font-size: 30px;
         margin-bottom: 15px;
+        text-align: inherit;
     }
     
     .menu .menu_box .menu_card .menu_text p{
@@ -833,6 +834,7 @@ footer .end span{
         margin: 0 auto;
         width: 400px;
         font-size: 14px;
+        text-align: justify;
     }
     
     .menu .menu_box .menu_card .menu_text .menu_icon{
@@ -844,7 +846,7 @@ footer .end span{
 
     .offer{
         width: 100%;
-        height: 190vh;
+        height: 175vh;
     }
 
     .offer .offer_box{
@@ -908,7 +910,7 @@ footer .end span{
         display: list-item;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
-    
+ 
 
 
 }
